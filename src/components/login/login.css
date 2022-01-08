@@ -1,0 +1,59 @@
+.loginDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.loginDiv::before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/images/login_background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
+.loginForm{
+    width: 450px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px hsl(0, 0%, 75%);
+}
+
+.forget-pasword-link {
+    font-size: 13px;
+}
+
+.forget-pasword-link:hover{
+    color: #ba68c8;
+    text-decoration: underline;
+}
+
+.center-btn-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.helper-text{
+    color: #d32f2f;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    margin-top: 3px;
+}
+
+.helper-text.valid{
+    color: transparent;
+}
